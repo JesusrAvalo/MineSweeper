@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscaminas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Buscaminas</h1>
+    <div id="config">
+        <label>Tamaño del tablero:</label>
+        <input id="rows" type="number" min="5" placeholder="Filas (min 5)">
+        <input id="cols" type="number" min="5" placeholder="Columnas (min 5)">
+        
+        <label>Cantidad de minas:</label>
+        <input id="mines" type="number" min="1" placeholder="Minas">
+        
+        <button onclick="startGame()">Iniciar Juego</button>
+    </div>
+
+    <div id="board-container">
+        <div id="board"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
